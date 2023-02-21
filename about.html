@@ -50,14 +50,34 @@ https://templatemo.com/tm-584-pod-talk
                     </a>
 
                     <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
-                        <div class="input-group input-group-lg">    
-                            <input name="search" type="search" class="form-control" id="search" placeholder="Data and AI" aria-label="Search">
-
+                        <div class="input-group input-group-lg">
+                            <input name="query" type="search" class="form-control" id="search" placeholder="Data and AI" aria-label="Search">
                             <button type="submit" class="form-control" id="submit">
                                 <i class="bi-search"></i>
                             </button>
                         </div>
                     </form>
+                    
+                    <script>
+                        const form = document.querySelector('form');
+                        form.addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            const searchQuery = document.querySelector('#search').value.toLowerCase();
+                            if (searchQuery === 'about') {
+                                window.location.href = 'about.html';
+                            } else if (searchQuery === 'service') {
+                                window.location.href = 'listing-page.html';
+                            } else if (searchQuery === 'home') {
+                                window.location.href = 'index.html';
+                            } else if (searchQuery === 'partnerships') {
+                                window.location.href = 'detail-page.html';
+                            } else if (searchQuery === 'contact') {
+                                window.location.href = 'contact.html';
+                            } else {
+                                window.location.href = 'search-results.html?query=' + searchQuery;
+                            }
+                        });
+                    </script>
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
