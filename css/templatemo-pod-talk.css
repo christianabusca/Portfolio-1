@@ -6,8 +6,6 @@ https://templatemo.com/tm-584-pod-talk
 
 */
 
-
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -19,7 +17,7 @@ https://templatemo.com/tm-584-pod-talk
   --custom-btn-bg-color:          #0066CC;
   --custom-btn-bg-hover-color:    #00CC99;
   --dark-color:                   #000000;
-  --p-color:                      #717275;
+  --p-color:                      black;
   --border-color:                 #7fffd4;
   --link-hover-color:             #0066CC;
 
@@ -102,6 +100,12 @@ h6 {
 
 p {
   color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+#serv {
+  color: var(--white-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
 }
@@ -250,7 +254,7 @@ main {
 -----------------------------------------*/
 
 .site-header {
-  background-image: url('../images/aboutpus.gif'), linear-gradient(#348CD2, #FFFFFF);;
+  background-image: url('../images/mainsg.png'), linear-gradient(#348CD2, #FFFFFF);;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -259,7 +263,7 @@ main {
 }
 
 .site-course {
-  background-image: url('../images/courseover.gif'), linear-gradient(#348CD2, #FFFFFF);;
+  background-image: url('../images/service.png'), linear-gradient(#348CD2, #FFFFFF);;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -281,7 +285,7 @@ main {
 }
 
 .site-sis {
-  background-image: url('../images/contactss.png'), linear-gradient(#348CD2, #FFFFFF);;
+  background-image: url('../images/mainsg.png'), linear-gradient(#348CD2, #FFFFFF);;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -512,11 +516,17 @@ main {
   CAROUSEL        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/mainlg.png'), linear-gradient(#348CD2, #FFFFFF);
+  background-image: url('../images/mainsg.png'), linear-gradient(#348CD2, #FFFFFF);
   background-repeat: no-repeat;
   background-size: 108% 76%;
   background-position: top;
   padding-top: 200px;
+}
+
+.hero-section2 {
+  background-repeat: no-repeat;
+  background-size: 108% 76%;
+  background-position: top;
 }
 
 .owl-carousel {
@@ -1051,7 +1061,7 @@ main {
 }
 
 .site-coursefooter {
-  background-image: url('../images/coursebottom.png'), linear-gradient(#FFFFFF, #348CD2);
+  background-image: url('../images/service.png'), linear-gradient(#FFFFFF, #348CD2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1067,7 +1077,7 @@ main {
 }
 
 .site-greenf {
-  background-image: url('../images/connectionfooter.gif'), linear-gradient(#FFFFFF, #348CD2);
+  background-image: url('../images/connections.gif'), linear-gradient(#FFFFFF, #348CD2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
